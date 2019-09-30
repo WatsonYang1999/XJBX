@@ -1,0 +1,354 @@
+INTTK int
+IDENFR flag
+<变量定义>
+SEMICN ;
+<变量说明>
+INTTK int
+IDENFR add
+<声明头部>
+LPARENT (
+INTTK int
+IDENFR x
+COMMA ,
+INTTK int
+IDENFR y
+<参数表>
+RPARENT )
+LBRACE {
+CONSTTK const
+INTTK int
+IDENFR AF1
+ASSIGN =
+INTCON 10
+<无符号整数>
+<整数>
+<常量定义>
+SEMICN ;
+CONSTTK const
+INTTK int
+IDENFR AF2
+ASSIGN =
+INTCON 20
+<无符号整数>
+<整数>
+COMMA ,
+IDENFR AF3
+ASSIGN =
+INTCON 10
+<无符号整数>
+<整数>
+<常量定义>
+SEMICN ;
+<常量说明>
+INTTK int
+IDENFR af1
+<变量定义>
+SEMICN ;
+<变量说明>
+RETURNTK return
+LPARENT (
+IDENFR x
+<因子>
+<项>
+PLUS +
+IDENFR y
+<因子>
+<项>
+<表达式>
+RPARENT )
+<返回语句>
+SEMICN ;
+<语句>
+<语句列>
+<复合语句>
+RBRACE }
+<有返回值函数定义>
+INTTK int
+IDENFR greater
+<声明头部>
+LPARENT (
+INTTK int
+IDENFR x
+COMMA ,
+INTTK int
+IDENFR y
+<参数表>
+RPARENT )
+LBRACE {
+IFTK if
+LPARENT (
+IDENFR x
+<因子>
+<项>
+<表达式>
+GRE >
+IDENFR y
+<因子>
+<项>
+<表达式>
+<条件>
+RPARENT )
+LBRACE {
+RETURNTK return
+LPARENT (
+INTCON 1
+<无符号整数>
+<整数>
+<因子>
+<项>
+<表达式>
+RPARENT )
+<返回语句>
+SEMICN ;
+<语句>
+<语句列>
+RBRACE }
+<语句>
+ELSETK else
+LBRACE {
+RETURNTK return
+LPARENT (
+INTCON 0
+<无符号整数>
+<整数>
+<因子>
+<项>
+<表达式>
+RPARENT )
+<返回语句>
+SEMICN ;
+<语句>
+<语句列>
+RBRACE }
+<语句>
+<条件语句>
+<语句>
+<语句列>
+<复合语句>
+RBRACE }
+<有返回值函数定义>
+CHARTK char
+IDENFR greater_char
+<声明头部>
+LPARENT (
+INTTK int
+IDENFR x
+COMMA ,
+INTTK int
+IDENFR y
+<参数表>
+RPARENT )
+LBRACE {
+IFTK if
+LPARENT (
+IDENFR x
+<因子>
+<项>
+<表达式>
+GRE >
+IDENFR y
+<因子>
+<项>
+<表达式>
+<条件>
+RPARENT )
+LBRACE {
+RETURNTK return
+LPARENT (
+CHARCON y
+<因子>
+<项>
+<表达式>
+RPARENT )
+<返回语句>
+SEMICN ;
+<语句>
+<语句列>
+RBRACE }
+<语句>
+ELSETK else
+LBRACE {
+RETURNTK return
+LPARENT (
+CHARCON n
+<因子>
+<项>
+<表达式>
+RPARENT )
+<返回语句>
+SEMICN ;
+<语句>
+<语句列>
+RBRACE }
+<语句>
+<条件语句>
+<语句>
+<语句列>
+<复合语句>
+RBRACE }
+<有返回值函数定义>
+VOIDTK void
+IDENFR print_char
+LPARENT (
+CHARTK char
+IDENFR ch
+<参数表>
+RPARENT )
+LBRACE {
+PRINTFTK printf
+LPARENT (
+STRCON %c
+<字符串>
+COMMA ,
+IDENFR ch
+<因子>
+<项>
+<表达式>
+RPARENT )
+<写语句>
+SEMICN ;
+<语句>
+<语句列>
+<复合语句>
+RBRACE }
+<无返回值函数定义>
+INTTK int
+IDENFR return1
+<声明头部>
+LPARENT (
+<参数表>
+RPARENT )
+LBRACE {
+RETURNTK return
+LPARENT (
+INTCON 1
+<无符号整数>
+<整数>
+<因子>
+<项>
+<表达式>
+RPARENT )
+<返回语句>
+SEMICN ;
+<语句>
+<语句列>
+<复合语句>
+RBRACE }
+<有返回值函数定义>
+VOIDTK void
+IDENFR nothing
+LPARENT (
+<参数表>
+RPARENT )
+LBRACE {
+SEMICN ;
+<语句>
+<语句列>
+<复合语句>
+RBRACE }
+<无返回值函数定义>
+VOIDTK void
+MAINTK main
+LPARENT (
+RPARENT )
+LBRACE {
+IDENFR a
+ASSIGN =
+IDENFR return1
+LPARENT (
+<因子>
+<项>
+<表达式>
+<值参数表>
+RPARENT )
+<有返回值函数调用语句>
+<因子>
+<项>
+<表达式>
+<赋值语句>
+SEMICN ;
+<语句>
+IDENFR nothing
+LPARENT (
+<因子>
+<项>
+<表达式>
+<值参数表>
+RPARENT )
+<无返回值函数调用语句>
+SEMICN ;
+<语句>
+IDENFR greater_char
+LPARENT (
+CHARCON a
+<因子>
+<项>
+<表达式>
+COMMA ,
+CHARCON b
+<因子>
+<项>
+<表达式>
+<值参数表>
+RPARENT )
+<无返回值函数调用语句>
+SEMICN ;
+<语句>
+IDENFR print_char
+LPARENT (
+CHARCON c
+<因子>
+<项>
+<表达式>
+<值参数表>
+RPARENT )
+<无返回值函数调用语句>
+SEMICN ;
+<语句>
+IDENFR flag
+ASSIGN =
+INTCON 1
+<无符号整数>
+<整数>
+<因子>
+<项>
+PLUS +
+INTCON 2
+<无符号整数>
+<整数>
+<因子>
+<项>
+PLUS +
+IDENFR greater
+LPARENT (
+INTCON 10
+<无符号整数>
+<整数>
+<因子>
+<项>
+<表达式>
+COMMA ,
+INTCON 100
+<无符号整数>
+<整数>
+<因子>
+<项>
+<表达式>
+<值参数表>
+RPARENT )
+<有返回值函数调用语句>
+<因子>
+<项>
+<表达式>
+<赋值语句>
+SEMICN ;
+<语句>
+RETURNTK return
+<返回语句>
+SEMICN ;
+<语句>
+<语句列>
+<复合语句>
+RBRACE }
+<主函数>
+<程序>

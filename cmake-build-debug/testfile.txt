@@ -1,0 +1,50 @@
+int flag;
+
+int add(int x,int y)
+{
+	const int AF1 = 10;
+	const int AF2 = 20, AF3 = 10;
+	int af1;
+
+    return(x + y);
+}
+int greater(int x, int y)
+{
+    if(x > y)
+	{
+		return (1);
+	}
+	else {
+		return (0);
+	}
+}
+char greater_char(int x, int y){
+	if(x > y) {
+		return('y');
+	}
+	else {
+		return('n');
+	}
+}
+void print_char(char ch)
+{
+    printf("%c",ch);
+}
+
+int return1(){
+	return (1);
+}
+void nothing(){
+	;
+}
+
+void main() {
+    a = return1();
+    nothing();
+    greater_char('a','b');
+    print_char('c');
+    flag = 1+2+greater(10, 100);
+
+
+    return ;
+}

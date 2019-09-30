@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/watsonyang/CLionProjects/GrammerAnalysis/grammer.cpp
+iostream
+-
+string
+-
+map
+-
+algorithm
+-
+fstream
+-
+vector
+-
+parse.h
+/Users/watsonyang/CLionProjects/GrammerAnalysis/parse.h
+grammer.h
+/Users/watsonyang/CLionProjects/GrammerAnalysis/grammer.h
+
+/Users/watsonyang/CLionProjects/GrammerAnalysis/grammer.h
+string
+-
+fstream
+-
+iostream
+-
+
+/Users/watsonyang/CLionProjects/GrammerAnalysis/parse.h
+iostream
+-
+map
+-
+string
+-
+

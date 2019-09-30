@@ -1,0 +1,3 @@
+/Users/watsonyang/CLionProjects/GrammerAnalysis/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/watsonyang/CLionProjects/GrammerAnalysis/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/watsonyang/CLionProjects/GrammerAnalysis/cmake-build-debug/CMakeFiles/GrammerAnalysis.dir
